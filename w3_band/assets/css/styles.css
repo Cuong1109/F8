@@ -18,6 +18,22 @@ html {
   height: 46px;
   background-color: black;
 }
+#header .search-icon {
+  font-size: 15px;
+  color: white;
+  line-height: 46px;
+}
+#header .search-btn {
+  float: right;
+  padding: 0 24px;
+}
+#header .search-btn:hover {
+  background: #f44336 !important;
+  cursor: pointer;
+}
+#nav {
+  display: inline-block;
+}
 #nav,
 .subnav {
   list-style: none;
@@ -30,6 +46,7 @@ html {
 }
 #nav > li > a {
   color: white;
+  text-transform: uppercase;
 }
 #nav li a {
   text-decoration: none;
