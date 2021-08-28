@@ -9,7 +9,9 @@ html {
 }
 #main {
 }
-#nav,
+#nav {
+  display: inline-block;
+}
 .subnav {
   list-style-type: none;
   box-shadow: 0 0 10px rgb(94, 91, 91);
@@ -17,15 +19,33 @@ html {
 #header {
   background-color: black;
   height: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#header .search-btn {
+  float: right;
+}
+#header .search-icon {
+  font-size: 15px;
+  line-height: 46px;
+  color: white;
+  padding: 0 21px;
+}
+#header .search-btn:hover {
+  background-color: #f44336 !important;
+  cursor: pointer;
 }
 #nav > li {
   display: inline-block;
+  position: relative;
 }
 #nav li {
   position: relative;
 }
 #nav > li > a {
   color: white;
+  font-size: 15px;
 }
 #nav li a {
   text-decoration: none;
@@ -53,8 +73,9 @@ html {
   line-height: 38px;
 }
 #slider {
-  min-height: 500px;
-  background-color: white;
+  min-height: 1000px;
+  background-color: green;
+  margin-top: 46px;
 }
 #content {
 }
