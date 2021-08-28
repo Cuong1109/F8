@@ -17,6 +17,11 @@ html {
 #header {
   height: 46px;
   background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 #header .search-icon {
   font-size: 15px;
@@ -74,12 +79,33 @@ html {
   line-height: 38px;
   padding: 0px 16px;
 }
-
+/* Slider */
 #slider {
-  min-height: 500px;
-  background-color: white;
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
 }
+.text-content {
+  position: absolute;
+  bottom: 37px;
+  color: white;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width: 100%;
+  text-align: center;
+}
+.text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+.text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+/* End slider */
 #content {
+  min-height: 1000px;
 }
 #footer {
 }
