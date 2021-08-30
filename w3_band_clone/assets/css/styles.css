@@ -22,6 +22,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 #header .search-btn {
   float: right;
@@ -73,11 +74,29 @@ html {
   line-height: 38px;
 }
 #slider {
-  min-height: 1000px;
-  background-color: green;
   margin-top: 46px;
+  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+  padding-top: 50%;
+  position: relative;
+}
+#slider .slider-content {
+  color: white;
+  text-align: center;
+  width: 100%;
+  bottom: 37px;
+  position: absolute;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+  font-weight: bolder;
 }
 #content {
+  min-height: 1000px;
 }
 #footer {
 }
