@@ -185,6 +185,52 @@ html {
   line-height: 24px;
   margin-top: -3px;
 }
+/* Place */
+.place-list {
+  margin: 32px -8px 48px;
+}
+.place-item {
+  float: left;
+  width: 33.333%;
+  padding: 0px 8px;
+  text-align: left;
+}
+.place-img {
+  width: 100%;
+  display: block;
+}
+.place-img :hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 550;
+}
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+.place-des {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+.place-btn {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.place-btn:hover {
+  color: black;
+  background-color: #ccc;
+}
 /* Footer-section */
 #footer {
 }
