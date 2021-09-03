@@ -7,6 +7,9 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+.clear {
+  clear: both;
+}
 #main {
 }
 #nav {
@@ -123,6 +126,24 @@ html {
   text-align: justify;
   font-size: 15px;
   line-height: 1.5;
+}
+/* Band member */
+.member-list {
+  float: left;
+  margin-top: 48px;
+  width: 33.3333%;
+  text-align: center;
+}
+.member-item {
+}
+.member-name {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.member-img {
+  width: 154px;
+  border-radius: 5px;
 }
 #footer {
 }
