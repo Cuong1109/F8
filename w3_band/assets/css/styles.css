@@ -244,10 +244,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .modal-container {
   background-color: white;
   width: 900px;
+  max-width: calc(100%-32px);
   min-height: 200px;
   position: relative;
 }
