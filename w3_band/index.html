@@ -118,7 +118,7 @@
                 <h3 class="place-heading">New York</h3>
                 <p class="place-time">Fri 27 Nov 2016</p>
                 <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <a href="#" class="place-btn">Buy Tickets</a>
+                <button class="place-btn js-buy-ticket">Buy Tickets</button>
               </div>
             </div>
             <!--  -->
@@ -128,7 +128,7 @@
                 <h3 class="place-heading">New York</h3>
                 <p class="place-time">Fri 29 Nov 2016</p>
                 <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <a href="#" class="place-btn">Buy Tickets</a>
+                <button class="place-btn js-buy-ticket">Buy Tickets</button>
               </div>
             </div>
             <!--  -->
@@ -138,7 +138,7 @@
                 <h3 class="place-heading">New York</h3>
                 <p class="place-time">Fri 28 Nov 2016</p>
                 <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <a href="#" class="place-btn">Buy Tickets</a>
+                <button class="place-btn js-buy-ticket">Buy Tickets</button>
               </div>
             </div>
             <div class="clear"></div>
@@ -153,9 +153,10 @@
         </div>
       </div>
       <div id="footer"></div>
-      <div class="modal">
-        <div class="modal-container">
-          <i class="far fa-window-close modal-close"></i>
+      <!-- End footer -->
+      <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+          <i class="far fa-window-close modal-close js-modal-close"></i>
           <header class="modal-header">
             <i class="modal-heading-icon fas fa-suitcase"></i>
             Tickets
@@ -184,5 +185,29 @@
         </div>
       </div>
     </div>
+    <!-- Script -->
+    <script>
+      const buyBtns= document.querySelectorAll('.js-buy-ticket')
+      const modal=document.querySelector('.modal')
+      const modalClose=document.querySelector('.js-modal-close');
+      const modalContainer=document.querySelector('.js-modal-container')
+
+      function showBuyTickets(){
+        modal.classList.add('open')
+      } 
+      function hideBuyTickets(){
+        modal.classList.remove('open')
+      }
+
+      for (const buyBtn of buyBtns) {
+        buyBtn.addEventListener('click',showBuyTickets)
+      }
+      modalClose.addEventListener('click',hideBuyTickets);
+
+      modal.addEventListener('click',hideBuyTickets);
+      modalContainer.addEventListener('click',function(even){
+        even.stopPropagation()
+      })
+</script>
   </body>
 </html>
