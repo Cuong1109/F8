@@ -48,7 +48,7 @@
         </div>
       </div>
       <div id="content">
-        <div class="content-section">
+        <div class="content-section text-center">
           <!-- ABOUT -->
           <div class="section-heading">THE BAND</div>
           <div class="section-sub-heading">We love music</div>
@@ -66,7 +66,8 @@
             ea commodo consequat.
           </div>
           <!-- Band Member -->
-          <div class="member-list">
+          <div class="row">
+          <div class="member-list ">
             <div class="col col-third">
               <p class="member-name">Name</p>
               <img
@@ -96,11 +97,11 @@
               />
             </div>
           </div>
-          <div class="clear"></div>
+          </div>
         </div>
         <!-- Tour -->
         <div class="tour-section">
-          <div class="content-section">
+          <div class="content-section text-center">
             <div class="section-heading text-white">TOUR DATES</div>
             <div class="section-sub-heading text-white">
               Remember to book your tickets!
@@ -141,7 +142,6 @@
                 <button class="place-btn js-buy-ticket">Buy Tickets</button>
               </div>
             </div>
-            <div class="clear"></div>
           </div>
           <!-- End place -->
           </div>
@@ -149,7 +149,33 @@
         <!-- Contact -->
         <div class="content-section">
           <div class="section-heading">CONTACT</div>
-          <div class="section-sub-heading">Fan? Drop a note!</div>
+          <div class="section-sub-heading text-center">Fan? Drop a note!</div>
+          <!-- Contact form -->
+          <div class="row contact-content">
+            <div class="col col-half contact-info">
+              <p><i class="fas fa-location-arrow"></i> Chicago, US</p>
+              <p><i class="fas fa-phone"></i>Phone: +00 151515</p>
+              <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-half contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col col-half">
+                    <input placeholder="Name" required type="text" name="" id="" class="form-control">
+                  </div>
+                  <div class="col col-half">
+                    <input placeholder="Email"required  type="text" name="" id="" class="form-control">
+                  </div>
+                </div>
+                <div class="row mt-8">
+                  <div class="col col-full">
+                    <input placeholder="Message"required  type="text" name="" id="" class="form-control ">                    
+                  </div>
+                </div>
+                <input class="mt-16 form-submit-btn" type="submit" value="SEND">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div id="footer"></div>

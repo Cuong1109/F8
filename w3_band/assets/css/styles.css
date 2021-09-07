@@ -17,6 +17,12 @@ html {
 .col-third {
   width: 33.333%;
 }
+.col-half {
+  width: 50%;
+}
+.col-full {
+  width: 100%;
+}
 .col {
   float: left;
   padding: 0 8px;
@@ -25,12 +31,27 @@ html {
   margin-left: -8px;
   margin-right: -8px;
 }
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .clear {
   clear: both;
 }
 .text-white {
   color: white !important;
 }
+.text-center {
+  text-align: center;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+/* Main */
 #main {
 }
 #header {
@@ -131,7 +152,6 @@ html {
   padding: 64px 0px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 #content .section-heading {
   font-size: 30px;
@@ -237,6 +257,33 @@ html {
 .place-btn:hover {
   color: black;
   background-color: #ccc;
+}
+/* Contact form */
+.contact-content {
+  margin-top: 48px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-info i[class*="fa-"] {
+  width: 30px;
+  display: inline-block;
+}
+.contact-form {
+  font-size: 15px;
+}
+.contact-form .form-control {
+  padding: 11px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.contact-form .form-submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  float: right;
 }
 /* Footer-section */
 #footer {
