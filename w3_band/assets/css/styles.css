@@ -66,19 +66,33 @@ html {
   left: 0;
   right: 0;
   z-index: 1;
+  overflow: hidden;
 }
-#header .search-icon {
-  font-size: 15px;
-  color: white;
-  line-height: 46px;
-}
+
 #header .search-btn {
   float: right;
   padding: 0 24px;
 }
+#header .mobile-menu-btn {
+  float: right;
+  padding: 0 24px;
+  display: none;
+}
 #header .search-btn:hover {
   background: #f44336 !important;
   cursor: pointer;
+}
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon {
+  color: black;
+}
+#header .search-icon,
+#header .menu-icon {
+  font-size: 15px;
+  color: white;
+  line-height: 46px;
 }
 #nav {
   display: inline-block;
