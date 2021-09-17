@@ -12,6 +12,7 @@
 4.Kiểu dáng */
 html {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 /* Common */
 .col-third {
@@ -152,9 +153,12 @@ html {
 }
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   padding: 64px 0px 112px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 #content .section-heading {
   font-size: 30px;
@@ -282,8 +286,32 @@ html {
   border: 1px solid #ccc;
   width: 100%;
 }
+.map-section img {
+  width: 100%;
+}
 /* Footer-section */
 #footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .social-list {
+  font-size: 24px;
+}
+#footer .social-list a {
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .social-list a:hover {
+  color: rgba(0, 0, 0, 0.2);
+}
+#footer .copy-right {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a {
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a:hover {
+  color: rgba(0, 0, 0, 0.2);
 }
 .modal {
   position: fixed;
