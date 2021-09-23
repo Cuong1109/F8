@@ -1,7 +1,11 @@
 /* Mobile */
 @media (max-width: 740px) {
-  .s-col-full {
+  .s-col-full,
+  .s-full-width {
     width: 100%;
+  }
+  .s-mt-8 {
+    margin-top: 8px;
   }
   #nav {
     display: block;
@@ -40,5 +44,8 @@
   }
   #content .member-img {
     width: 60%;
+  }
+  .contact-form {
+    margin-top: 16px;
   }
 }
