@@ -290,6 +290,13 @@ html {
   font-size: 18px;
   line-height: 1.5;
 }
+.contact-info a {
+  color: #06589b;
+  opacity: 0.5;
+}
+.contact-info a:hover {
+  opacity: 1;
+}
 .contact-info i[class*="fa-"] {
   width: 30px;
   display: inline-block;
