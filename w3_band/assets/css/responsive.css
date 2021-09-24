@@ -1,3 +1,27 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+/* Tablet and mobile */
+@media (max-width: 1023px) {
+  .btn {
+    padding: 15px 16px;
+  }
+  .contact-form .form-control {
+    padding: 15px;
+  }
+  #footer .social-list {
+    font-size: 48px;
+  }
+  #footer .social-list a {
+    margin: 0px 8px;
+  }
+  #footer .copy-right a {
+    padding: 12px 0;
+  }
+  .contact-info {
+    line-height: 2;
+  }
+}
 /* Mobile */
 @media (max-width: 740px) {
   .s-col-full,
@@ -46,6 +70,6 @@
     width: 60%;
   }
   .contact-form {
-    margin-top: 16px;
+    margin-top: 32px;
   }
 }
