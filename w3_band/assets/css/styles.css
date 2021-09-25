@@ -144,7 +144,7 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
-  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+  background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
 }
 .text-content {
   position: absolute;
@@ -162,6 +162,7 @@ html {
 .text-description {
   font-size: 15px;
   margin-top: 25px;
+  text-shadow: 0 0 1px black;
 }
 /* End slider */
 #content {
