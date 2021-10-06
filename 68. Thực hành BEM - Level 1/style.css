@@ -1,0 +1,25 @@
+.btn{
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  opacity .4s ease;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn + .btn{
+    margin-left: 16px;
+}
+.btn--success{
+    background-color: green;
+}
+.btn--warn{
+    background-color: yellow;
+}
+.btn--danger{
+    background-color: red;
+}
+.btn--disable{
+    opacity: 0.5 !important;
+    cursor: default; 
+}
